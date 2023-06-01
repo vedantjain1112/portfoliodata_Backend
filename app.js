@@ -66,7 +66,8 @@ app.post("/postdata", async (req,res)=>{
     }).catch((err)=>{
         console.log("Got an error ", err)
     });
-    res.sendFile(path.join(__dirname,'../front-end/submitted.html'))
+//     res.sendFile(path.join(__dirname,'../front-end/submitted.html'))
+    res.redirect("https://jainvedant1121.netlify.app/")
 })
 
 app.listen(8080,()=>{
